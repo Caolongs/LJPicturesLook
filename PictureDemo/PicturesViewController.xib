@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PicturesViewController" customModule="PictureDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="downloadBtn" destination="pSN-EH-Jbs" id="OPr-xF-UZ0"/>
+                <outlet property="pageNumLabel" destination="wFT-IR-Fjf" id="ZIp-W6-mRN"/>
+                <outlet property="scrollView" destination="63B-A5-xX5" id="QnS-lu-hFN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSN-EH-Jbs">
+                    <rect key="frame" x="255" y="503" width="35" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="9Jc-vM-GHx"/>
+                        <constraint firstAttribute="width" constant="35" id="Sfo-6Q-Bxy"/>
+                    </constraints>
+                    <connections>
+                        <action selector="downloadPicBtnClick:" destination="-1" eventType="touchUpInside" id="b4S-E6-Tbd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFT-IR-Fjf">
+                    <rect key="frame" x="136" y="517" width="48" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="4cW-K6-XNU"/>
+                        <constraint firstAttribute="height" constant="21" id="tFB-i6-d38"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63B-A5-xX5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pSN-EH-Jbs" secondAttribute="trailing" constant="30" id="6UG-rl-xwh"/>
+                <constraint firstItem="63B-A5-xX5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Djp-NP-PBp"/>
+                <constraint firstAttribute="trailing" secondItem="63B-A5-xX5" secondAttribute="trailing" id="Fi9-Zq-bfD"/>
+                <constraint firstItem="63B-A5-xX5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kf8-Nb-x7w"/>
+                <constraint firstItem="wFT-IR-Fjf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="U1c-rh-mM4"/>
+                <constraint firstAttribute="bottom" secondItem="63B-A5-xX5" secondAttribute="bottom" id="W25-8V-Nb3"/>
+                <constraint firstAttribute="bottom" secondItem="wFT-IR-Fjf" secondAttribute="bottom" constant="30" id="swj-Y1-Tvu"/>
+                <constraint firstAttribute="bottom" secondItem="pSN-EH-Jbs" secondAttribute="bottom" constant="30" id="uEx-4a-GAD"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
